@@ -1,0 +1,126 @@
+.completedProjects {
+  position: relative;
+  display: flex;
+  width: 100%;
+  //height: 682px;
+  left: 0;
+  background: #131313;
+
+  & > .description {
+    width: 442px;
+    margin-top: 128.36px;
+    margin-bottom: 163.64px;
+    margin-left: 101px;
+
+    & > .description__grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2vw;
+
+      & > div > .value {
+        font-family: FuturaBookC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+      }
+
+      & > div > .key {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+      }
+    }
+
+    & > .description__desc {
+      font-family: FuturaBookC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #FFFFFF;
+    }
+
+    & > .description__title {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 37px;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+
+      color: #E3B873;
+    }
+  }
+
+  & > .pictures {
+    & > .titles {
+      display: flex;
+      justify-content: space-between;
+      width: 624px;
+      margin-top: 59px;
+
+      & > .inactive {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      & > .selected {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+      }
+    }
+
+    & > .slider {
+      //display: flex;
+      //justify-content: stretch;
+      //height: 482px;
+
+      & > .slider__first {
+        //display: flex;
+        max-width: 649px;
+        //width: 649px;
+        //background: url(../images/slider-image-one.png) no-repeat;
+        //background-size: cover;
+
+        & > img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+
+      & > .slider__second{
+        width: 164px;
+        background: url(../images/slider-image-two.png) no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media screen and (width: 375px) {
+    height: 728px;
+  }
+}

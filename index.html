@@ -3,27 +3,215 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>test</title>
-		<link rel="stylesheet" href="./dist/style.css"/>
+		<link rel="stylesheet" href="src/scss/main.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header>
+			<div class="header">
+				<p class="header__project-name">IC "Repair Design Project"</p>
+				<div class="header__links">
+					<a>Home</a>
+					<a>Projects</a>
+					<a>Measurement</a>
+					<a>Team</a>
+					<a>Reviews</a>
+					<a>Contact</a>
+				</div>
+				<p class="header__phone">+7 (928) 768-32-39</p>
+				<div class="header__button">
+					<span>Request a call</span>
+				</div>
+			</div>
 		</header>
 		<main>
-			<div class="presentation"></div>
-			<div class="completedProjects"></div>
-			<div class="online-control"></div>
-			<div class="broadcast-request"></div>
-			<div class="types-of-repair"></div>
-			<div class="measurer-request"></div>
-			<div class="showcase"></div>
-			<div class="design-projects"></div>
-			<div class="how-are-we-working"></div>
-			<div class="our-team"></div>
-			<div class="our-clients"></div>
-			<div class="questions"></div>
-			<div class="contacts"></div>
-			<div class="map"></div>
+			<div class="about">
+				<div class="wrapper">
+					<div class="about__instagram">Instagram</div>
+					<div class="about__image">
+						<div class="image__content">
+							<p class="image__title">Turnkey Repair in the<br>city of
+								<span style="color: #E3B873;">Rostov-on-Don</span>
+							</p>
+							<p class="image__description">Get ready-made turnkey repairs on time<br> with work time saving up to 45
+							                              days and 20% from<br> cost of materials due to the organization of work</p>
+							<div class="button_container">
+								<div class="image__calculate_button">Calculate the cost</div>
+								<div class="image__submit_button">Submit your application</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__scroll_down">
+					<span>scroll down</span>
+					<div class="circle">
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="button"></div>
+			</div>
+			<div class="completedProjects">
+				<div class="description">
+					<p class="description__title">Completed projects</p>
+					<p class="description__desc">Only a small part of the work performed by our company is<br>
+					                             presented on the site. For 14 years on in the construction<br>
+					                             market we have made happy more than 1000 families</p>
+					<div class="description__grid">
+						<div class="city">
+							<p class="key">City:</p>
+							<p class="value">Rostov-on-Don LCD admiral</p>
+						</div>
+						<div class="apartment_area">
+							<p class="key">Apartment area:</p>
+							<p class="value">81 m2</p>
+						</div>
+						<div class="repair_time">
+							<p class="key">Repair time:</p>
+							<p class="value">3.5 months</p>
+						</div>
+						<div class="repair-cost">
+							<p class="key">Repair cost:</p>
+							<p class="value">Upon request</p>
+						</div>
+					</div>
+				</div>
+				<div class="pictures">
+					<div class="titles">
+						<p class="selected">Rostov-on-Don Patriotic</p>
+						<p class="inactive">Sochi Thieves</p>
+						<p class="inactive">Rostov-on-Don, Admiral</p>
+					</div>
+					<div class="slider">
+						<div class="slider__first">
+							<img src="src/images/slider-image-one.png"/>
+						</div>
+						<div class="slider__second">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="online-control">
+				<div class="title">
+					online control
+					<div class="camera_svg">
+						<img src="src/icons/camera.svg" style="width: 100%; height : auto;"/>
+					</div>
+				</div>
+				<div class="video">
+					<iframe width="817" height="433" src="https://www.youtube.com/embed/TgWlT5YFbh4" frameborder="0"
+					        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					        allowfullscreen></iframe>
+				</div>
+				<div class="description">
+					<div class="line"></div>
+					At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>
+					At any time, you can go to our website and monitor the progress of work in your<br>
+					apartment. You can watch the live broadcast from one of our facilities!<br>
+					Leave a request below and you will receive a link to the broadcast.
+				</div>
+			</div>
+			<div class="broadcast-request">
+				<form>
+					<div class="wrapper">
+						<div>
+							<label for="name_input">Name</label>
+							<input type="text" class="name_input" id="name_input" placeholder="What is your name:">
+						</div>
+						<div>
+							<label for="phone_input">Phone</label>
+							<input type="text" class="phone_input" id="phone_input" placeholder="Your phone number:">
+						</div>
+						<input type="submit" class="submit" value="Submit">
+					</div>
+					<label class="checkbox_container">
+						<input type="checkbox">
+						<span class="checkmark">
+							<img src="src/icons/check.svg"/>
+						</span>
+						I agree to the processing of personal data
+					</label>
+				</form>
+			</div>
+			<div class="types-of-repair">
+				<div class="title">
+					Types of repair
+					<div class="hammer_svg">
+						<img src="src/icons/hammer.svg" style="width: 100%; height : auto;"/>
+					</div>
+				</div>
+				<div class="cards">
+					<div class="card">
+						<div class="image">
+							<!--<img src="src/images/gallery-1.jpg" style="height: 421px; width: 392px;">-->
+						</div>
+						<div class="description">
+							<div class="wrapper">
+								<p>Redecorating</p>
+								<ul>
+									<!--Redecorating-->
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceiling</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+								<div class="button">from 900 rub / m2</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="image"></div>
+						<div class="description">
+							<div class="wrapper">
+								<p>Overhaul</p>
+								<ul>
+									<!--Redecorating-->
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceiling</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+								<div class="button">from 1800 rub / m2</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="image"></div>
+						<div class="description">
+							<div class="wrapper">
+								<p>Designer Repair</p>
+								<ul>
+									<!--Redecorating-->
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceiling</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+								<div class="button">from 4000 rub / m2</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="measurer-request">
+					
+				</div>
+				<div class="showcase"></div>
+				<div class="design-projects"></div>
+				<div class="how-are-we-working"></div>
+				<div class="our-team"></div>
+				<div class="our-clients"></div>
+				<div class="questions"></div>
+				<div class="contacts"></div>
+				<div class="map"></div>
 		</main>
 		<footer>
 		</footer>

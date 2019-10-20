@@ -1,0 +1,173 @@
+.about {
+  position: relative;
+  width: 100%;
+  //height: 755px;
+  //background: red;
+  @media screen and (width: 375px) {
+    height: 476px;
+  }
+
+  & > .wrapper {
+    display: grid;
+    grid-template-columns: 82px 1358px;
+    grid-template-rows: 707px;
+    height: 755px;
+    width: 100%;
+    background: #131313;
+    //flex-direction: column;
+
+    & > .about__instagram {
+      height: 82px;
+      width: 100%;
+      float: left;
+
+      background: #131313;
+      transform: rotate(90deg);
+
+      font-family: FuturaDemiC;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+
+      color: #E3B873;
+    }
+
+    & > .about__image {
+      //background-image: url(../images/main_image.png);
+      max-height: 707px;
+      background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/main_image.png) no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      float: right;
+
+      & > .image__content {
+        margin-left: 60px;
+        margin-top: 194px;
+
+        & > .image__title {
+
+          font-family: Yeseva One;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 40px;
+          line-height: 53px;
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+        }
+
+        & > .image__description {
+          font-family: FuturaBookC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 30px;
+          padding-top: 19px;
+
+          color: #FFFFFF;
+        }
+
+        & > .button_container {
+          display: flex;
+          margin-top: 41px;
+
+          & > .image__calculate_button {
+            height: 51px;
+            width: 207px;
+
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            border-radius: 2px;
+
+            font-family: FuturaDemiC;
+            font-size: 13px;
+            line-height: 51px;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+          }
+
+          & > .image__submit_button {
+            width: 207px;
+
+            font-family: FuturaDemiC;
+            font-size: 13px;
+            line-height: 51px;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 2px;
+            margin-left: 20px;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__scroll_down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+    width: 247px;
+    //text-align: center;
+
+    background: #131313;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    //transform: translateY(50%);
+
+    & > span {
+      //width: 100%;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 97px;
+      text-transform: uppercase;
+      //text-align: center;
+
+      color: #FFFFFF;
+    }
+
+    & > .circle {
+      height: 29px;
+      width: 29px;
+      border-radius: 50%;
+      border: 1.5px solid #E3B873;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > .arrow {
+        //width: 8.63px;
+        //height: 4.28px;
+        //
+        //border: 1.5px solid #E3B873;
+        //transform: rotate(-90deg);
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        align-self: center;
+
+        border-top: 5px solid #E3B873;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+

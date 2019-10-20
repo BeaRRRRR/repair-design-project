@@ -1,0 +1,123 @@
+@import "base/typography";
+@import "base/normalize";
+@import "layout/header";
+@import "pages/about";
+@import "pages/completed-projects";
+@import "pages/online-contorl";
+@import "pages/broadcast-request";
+@import "pages/types-of-repair";
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  max-height: 10150px;
+  @media screen and (width: 375px) {
+    max-width: 375px;
+    max-height: 8796px;
+  }
+}
+
+
+
+.measurer-request {
+  position: relative;
+  width: 100%;
+  height: 901px;
+  background: blue;
+  @media screen and (width: 375px) {
+    display: none;
+  }
+}
+
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 1017.86px;
+  background: purple;
+  @media screen and (width: 375px) {
+    height: 364px;
+  }
+}
+
+.design-projects {
+  position: relative;
+  width: 100%;
+  height: 1008px;
+  background: coral;
+  @media screen and (width: 375px) {
+    height: 1812px;
+  }
+}
+
+.how-are-we-working {
+  position: relative;
+  width: 100%;
+  height: 686px;
+  background: forestgreen;
+  @media screen and (width: 375px) {
+    display: none;
+  }
+}
+
+.our-team {
+  position: relative;
+  width: 100%;
+  height: 965px;
+  background: darkslateblue;
+  @media screen and (width: 375px) {
+    height: 1705px;
+  }
+}
+
+.our-clients {
+  position: relative;
+  width: 100%;
+  height: 770px;
+  background: darkslategray;
+  @media screen and (width: 375px) {
+    display: none;
+  }
+}
+
+.questions {
+  position: relative;
+  width: 100%;
+  height: 533px;
+  background: aquamarine;
+  @media screen and (width: 375px) {
+    height: 543px;
+  }
+}
+
+.contacts {
+  position: relative;
+  width: 100%;
+  height: 161px;
+  background: palevioletred;
+  @media screen and (width: 375px) {
+    order: 2;
+    height: 213px;
+  }
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 555px;
+  background: darkcyan;
+  @media screen and (width: 375px) {
+    order: 1;
+    height: 255px;
+  }
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 133px;
+  background: lightyellow;
+  @media screen and (width: 375px) {
+    display: none;
+  }
+}

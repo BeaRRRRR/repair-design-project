@@ -1,0 +1,30 @@
+//FuturaDemiC font
+@font-face {
+  font-family: 'fontcb401f6ff510dca7f9c2eb1894b09e79';
+
+  src: url('https://nomail.com.ua/files/eot/cb401f6ff510dca7f9c2eb1894b09e79.eot?#iefix') format('embedded-opentype'),
+  url('https://nomail.com.ua/files/woff/cb401f6ff510dca7f9c2eb1894b09e79.woff') format('woff'),
+  url('https://nomail.com.ua/files/woff2/cb401f6ff510dca7f9c2eb1894b09e79.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: local('FuturaDemiC'), url('https://nomail.com.ua/files/woff/cb401f6ff510dca7f9c2eb1894b09e79.woff') format('woff');
+}
+
+//FuturaBookC font
+@font-face {
+  font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+
+  src: url('https://nomail.com.ua/files/eot/cf181c908f12bcf3eb2f1dfdb2f97d01.eot?#iefix') format('embedded-opentype'),
+  url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff'),
+  url('https://nomail.com.ua/files/woff2/cf181c908f12bcf3eb2f1dfdb2f97d01.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: local('FuturaBookC'), url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff');
+}
+
+// Yeseva One font
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
