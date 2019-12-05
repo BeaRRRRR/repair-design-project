@@ -98,6 +98,10 @@
       margin-top: 118.24px;
       margin-left: 386px;
 
+      & > * {
+        z-index: 1;
+      }
+
       p {
         margin-left: 13.24px;
       }

@@ -16,7 +16,25 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
-      }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
     ]
   },
   plugins: [
