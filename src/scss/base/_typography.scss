@@ -26,5 +26,27 @@
   src: local('FuturaBookC'), url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff');
 }
 
+// FuturaMediumC font
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url('../fonts/FuturaMedium/FuturaMediumC.eot');
+  src: url('../fonts/FuturaMedium/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaMedium/FuturaMediumC.woff') format('woff'),
+  url('../fonts/FuturaMedium/FuturaMediumC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Yeseva One font
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

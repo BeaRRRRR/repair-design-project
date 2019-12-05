@@ -9,24 +9,33 @@
   background: #ffffff;
   @media screen and (width: 375px) {
     height: 311px;
+    background: #131313;
   }
 
   & > form {
     & > .wrapper {
-      width: 769px;
-      //height: 100%;
+      max-width: 769px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      //display: grid;
-      //grid-template-columns: 231px 231px 200px;
-      //grid-template-rows: 1fr;
       margin: 0 auto;
 
+      @media screen and (max-width: 375px) {
+        flex-direction: column;
+        margin-left: 18px;
+        margin-right: 17px;
+      }
+
       & > div {
-        width: 231px;
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: 375px) {
+          width: 100%;
+          &:nth-child(2) {
+           margin-top: 63px;
+          }
+        }
 
         & > label {
           font-family: FuturaBookC;
@@ -36,6 +45,10 @@
           line-height: 20px;
 
           color: rgba(54, 54, 54, 0.5);
+
+          @media screen and (max-width: 375px) {
+            color: rgba(255, 255, 255, 0.5);
+          }
         }
 
         & > input {
@@ -48,18 +61,26 @@
           line-height: 24px;
 
           color: #363636;
+
+
+          @media screen and (max-width: 375px) {
+            background-color: transparent;
+          }
         }
 
         & > input::placeholder {
           color: #363636;
+          @media screen and (max-width: 375px) {
+            color: #FFFFFF;
+          }
         }
       }
 
       & > .submit {
-        -webkit-appearance: none;
         width: 200px;
         background: #E3B873;
         box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+        border: none;
         border-radius: 2px;
 
         font-family: FuturaDemiC;
@@ -72,50 +93,74 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
-      }
-    }
 
-    & > .checkbox_container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: FuturaBookC;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 22px;
-      width: 285px;
-      margin: 0 auto;
-      margin-top: 34px !important;
-
-      color: #181818;
-      /* Hide the browser's default checkbox */
-      input {
-        //position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
+        @media screen and (max-width: 375px) {
+          z-index: 1;
+          order: 2;
+          margin-top: 62.43px;
+          margin-bottom: -26px;
+        }
       }
 
-      /* Create a custom checkbox */
-      .checkmark {
-        //position: absolute;
+      & > .checkbox_container {
+        position: absolute;
+
+        width: 285px;
+        left: 40%;
+        margin: 68px auto 0;
+
         display: flex;
-        flex-direction: row;
-        //top: 0;
-        //left: 0;
-        height: 18px;
-        width: 18px;
-        background: #E3B873;
-        border-radius: 1px;
+        align-items: center;
+        justify-content: space-between;
 
-        img {
-          margin: 0 auto;
-          vertical-align: middle;
+        font-family: FuturaBookC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+
+
+        color: #181818;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          order: 1;
+          margin: 28.3px 0 0;
+          font-size: 16px;
+          line-height: 22px;
+          align-self: flex-start;
+
+          color: #FFFFFF;
+        }
+        /* Hide the browser's default checkbox */
+        input {
+          //position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+          //position: absolute;
+          display: flex;
+          flex-direction: row;
+          //top: 0;
+          //left: 0;
+          height: 18px;
+          width: 18px;
+          background: #E3B873;
+          border-radius: 1px;
+
+          img {
+            margin: 0 auto;
+            vertical-align: middle;
+          }
         }
       }
     }
+
+
   }
 }

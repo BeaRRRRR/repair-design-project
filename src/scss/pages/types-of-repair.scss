@@ -5,7 +5,7 @@
   left: 0;
   background: #ffffff;
   @media screen and(max-width: 375px) {
-    height: 1975px;
+    min-height: 1819px;
   }
 
   .title {
@@ -21,6 +21,11 @@
 
     color: #181818;
 
+    @media screen and (max-width: 375px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
     .hammer_svg {
       max-height: 28px;
       max-width: 114px;
@@ -28,6 +33,7 @@
       //margin-bottom: 31px;
       margin: 13px auto 31px;
     }
+
   }
 
   .cards {
@@ -38,40 +44,64 @@
     height: 608px;
     margin-left: 102px;
     margin-right: 99px;
-    margin-bottom : 75px;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
 
     .card {
+      position: relative;
+      margin: 0 auto;
 
-      &:first-child > .image {
-        background: url("../images/gallery-1.jpg") no-repeat center;
-        height: 421px;
-        z-index: 0;
+      @media screen and (max-width: 375px) {
+        margin-bottom: 177px;
       }
 
-      &:nth-child(2) > .image {
-        background: url("../images/type-of-repair2.png") no-repeat center;
-        height: 421px;
-      }
+      .image {
+        max-height: 421px;
+        max-width: 392px;
 
-      &:last-child > .image {
-        background: url("../images/type-of-repair3.png") no-repeat center;
-        height: 421px;
+
+        @media screen and (max-width: 375px) {
+          max-height: 365px;
+          max-width: 340px;
+
+        }
+
+        img {
+          height: auto;
+          width: 100%;
+          display: block;
+        }
       }
 
       .description {
-        height: 286px;
-        width: 330px;
+        display: flex;
+        justify-content: center;
         margin: -128px auto 28px;
-        //margin-top: -127px;
-        //margin-bottom: 28px;
         background: #FFFFFF;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+        @media screen and (max-width: 375px) {
+          margin: 0;
+          margin-right: 70px !important;
+          position: absolute;
+          bottom: -98.85px;
+          left: 0;
+        }
 
         .wrapper {
           position: absolute;
-          margin: 0 auto;
-          margin-top: 25px !important;
+          margin: 25px auto 0;
 
+          background: #FFFFFF;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+          @media screen and (max-width: 375px) {
+            position: relative;
+            margin: 0;
+          }
 
           p {
             font-family: Yeseva One;
@@ -79,15 +109,23 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 25px;
-            margin-left: 23px;
+            margin-left: 31px;
             margin-bottom: 13px;
-            //margin-top: 25px;
 
             color: #363636;
+
+            @media screen and (max-width: 375px) {
+              font-size: 15px;
+              line-height: 21px;
+              margin-top: 21px;
+            }
           }
 
           ul {
-            //margin-left: 34px;
+            margin-left: 45px;
+            margin-right: 102px;
+            padding-left: 0;
+
             li {
               font-family: FuturaBookC;
               font-style: normal;
@@ -96,14 +134,19 @@
               line-height: 25px;
 
               color: #959595;
+
+              @media screen and (max-width: 375px) {
+                font-size: 13px;
+                line-height: 22px;
+              }
             }
           }
 
           .button {
-            position: absolute;
             width: 228px;
             height: 54px;
-            margin-top: 28px;
+            margin-top: 29.39px;
+            margin-bottom: -26.39px;
             margin-left: 1px;
             background: #E3B873;
             box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
@@ -117,6 +160,11 @@
             text-transform: uppercase;
 
             color: #FFFFFF;
+
+            @media screen and (max-width: 375px) {
+              font-size: 15px;
+              line-height: 54px;
+            }
           }
         }
 

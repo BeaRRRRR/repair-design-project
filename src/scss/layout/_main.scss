@@ -1,0 +1,17 @@
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  max-height: 10150px;
+  @media screen and (width: 375px) {
+    max-width: 375px;
+    max-height: 8796px;
+  }
+
+  .background {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}

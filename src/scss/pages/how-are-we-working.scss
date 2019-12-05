@@ -1,0 +1,173 @@
+.how-are-we-working {
+  position: relative;
+  width: 100%;
+  height: 686px;
+  background: #131313;
+  z-index: 1;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 99px;
+    margin-right: 102px;
+
+    & > div:first-child {
+      .title {
+        font-family: FuturaDemiC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+      }
+
+      .subtitle {
+        margin-top: 18px;
+
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+      }
+
+      .counter {
+        margin-top: 92px;
+
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+      }
+
+      .image-title {
+        margin-top: 22px;
+
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+      }
+
+      .image-description {
+        margin-top: 16px;
+
+        font-family: FuturaBookC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+
+        color: #FFFFFF;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 61px;
+        height: 13.28px;
+        max-width: 287px;
+
+        .arrow-left {
+          transform: scale(-1, 1);
+          margin-right: 29.5px;
+        }
+
+        .arrow-right {
+          margin-left: 29.5px;
+        }
+
+        .circles {
+          margin-top: 1.46px;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: space-between;
+
+          .circle {
+            max-height: 9.57px;
+            width: 9.57px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.3);;
+
+            &.active {
+              background: #FFFFFF !important;
+            }
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      position: relative;
+
+      .image-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 36px;
+        grid-column-gap: 202px;
+
+        margin-top: 90.33px;
+
+        div {
+          .number {
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 21px;
+            text-transform: uppercase;
+            margin-bottom: 11.64px;
+
+            color: #FFFFFF;
+
+            text-decoration: underline;
+            text-decoration-color: #E3B873;;
+          }
+
+          .title {
+            font-family: FuturaBookC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      .image {
+        position: absolute;
+        bottom: 0;
+        img{
+          height: auto;
+          max-height: 376.54px;
+          width: 100%;
+          max-width: 756px;
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+.measurer-request {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 1000px;
+  background: #ffffff;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+
+  .wheel {
+    position: relative;
+    height: 636.26px;
+    width: 936px;
+    margin-top: 96px;
+
+    .background {
+      z-index: 0;
+      position: absolute;
+      margin-left: -304px;
+      filter: grayscale(1);
+      opacity: 0.4;
+      transform: scale(-1, 1);
+      max-height: 645px;
+    }
+
+    .ellipse {
+      position: absolute;
+      margin-left: -161px;
+      margin-top: 26px;
+    }
+
+    p {
+      font-family: FuturaMediumC;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #363636;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 41.76px;
+      height: 41.76px;
+      border-radius: 30px;
+
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+
+      color: #FFFFFF;
+
+      background: #E3B873;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .first {
+      margin-left: 351px;
+      margin-top: 90px;
+
+      p {
+        max-width: 362px;
+        margin-left: 17.05px;
+      }
+    }
+
+    .second {
+      margin-top: 70px;
+      margin-left: 425px;
+
+      p {
+        margin-left: 16.39px;
+      }
+    }
+
+    .third {
+      margin-top: 118.86px;
+      margin-left: 451px;
+
+      p {
+        margin-left: 14.24px;
+      }
+    }
+
+    .fourth {
+      margin-top: 118.24px;
+      margin-left: 386px;
+
+      p {
+        margin-left: 13.24px;
+      }
+    }
+
+  }
+
+  .form_container {
+    .form {
+      height: 509px;
+      width: 506px;
+      margin-top: 153px;
+      background: #131313;
+      box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      p {
+        font-family: FuturaDemiC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+
+        color: #FFFFFF;
+      }
+
+      div {
+        width: 408px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-family: FuturaBookC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 20px;
+
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        input {
+          font-family: FuturaMediumC;
+          font-size: 18px;
+          line-height: 25px;
+          /* identical to box height */
+
+          color: #FFFFFF;
+          background-color: #131313;
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+          padding-bottom: 12px;
+
+          &::placeholder {
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      & > .checkbox_container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 285px;
+        margin: 0 auto;
+        //margin-top: 34px !important;
+
+        font-family: FuturaBookC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #FFFFFF;
+        /* Hide the browser's default checkbox */
+        input {
+          //position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+          //position: absolute;
+          display: flex;
+          flex-direction: row;
+          //top: 0;
+          //left: 0;
+          height: 18px;
+          width: 18px;
+          background: #E3B873;
+          border-radius: 1px;
+
+          img {
+            margin: 0 auto;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .button {
+        width: 213px;
+        height: 51px;
+        background: #E3B873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+        margin-left: 244px;
+
+        font-family: FuturaDemiC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 51px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+      }
+
+    }
+
+    .savings {
+      display: flex;
+      align-items: center;
+      margin-top: 38.44px;
+
+      p {
+        font-family: FuturaDemiC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+
+        color: #E3B873;
+
+        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+        margin-left: 25px;
+      }
+
+      .piggy-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 72px;
+        height: 72px;
+        background: #E3B873;
+        box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+        border-radius: 50%;
+        margin-left: 31px;
+
+      }
+    }
+
+  }
+}

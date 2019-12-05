@@ -7,6 +7,11 @@
   margin-left: 82px;
   margin-right: 100px;
 
+  @media screen and (width: 375px) {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
   &__project-name {
     position: relative;
 
@@ -16,6 +21,10 @@
     text-transform: uppercase;
 
     color: #E3B873;
+
+    @media screen and (width: 375px) {
+      font-size: 12px;
+    }
   }
 
   &__links {
@@ -23,6 +32,10 @@
     display: flex;
     justify-content: space-between;
     width: 581.43px;
+
+    @media screen and (width: 375px) {
+      display: none;
+    }
 
     & > a {
       font-family: FuturaBookC;
@@ -47,6 +60,10 @@
     text-decoration-line: underline;
 
     color: #E3B873;
+
+    @media screen and (width: 375px) {
+      font-size: 12px;
+    }
   }
 
   &__button {
@@ -68,6 +85,10 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    @media screen and (width: 375px) {
+      display: none;
+    }
   }
 }
 
