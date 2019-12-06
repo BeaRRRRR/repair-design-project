@@ -8,6 +8,7 @@
     "webpack": "^4.41.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^5.0.2",
@@ -25,5 +26,6 @@
     "start": "webpack --watch"
   },
   "author": "",
+  "homepage": "/",
   "license": "ISC"
 }

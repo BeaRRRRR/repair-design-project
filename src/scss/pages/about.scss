@@ -191,32 +191,27 @@
       text-transform: uppercase;
       //text-align: center;
 
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     & > .circle {
       height: 29px;
       width: 29px;
       border-radius: 50%;
-      border: 1.5px solid #E3B873;
+      border: 1.5px solid #e3b873;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
 
       & > .arrow {
-        //width: 8.63px;
-        //height: 4.28px;
-        //
-        //border: 1.5px solid #E3B873;
-        //transform: rotate(-90deg);
         width: 0;
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         align-self: center;
 
-        border-top: 5px solid #E3B873;
+        border-top: 5px solid #e3b873;
         margin: 0 auto;
       }
     }

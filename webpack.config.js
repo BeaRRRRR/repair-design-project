@@ -1,12 +1,16 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
+  target: "web",
+  mode: "production",
 
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: './',
     filename: 'bundle.js'
   },
   module: {
@@ -34,14 +38,8 @@ module.exports = {
         loader: 'url-loader?limit=100000'
       },
       {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'url-loader',
       },
       {
         test: /\.svg$/,
@@ -54,6 +52,10 @@ module.exports = {
       template: "./index.html",
       filename: "./index.html"
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new CopyWebpackPlugin([
+      {from:'src/images',to:'images'},
+      {from :'src/icons', to :'icons'}
+    ]),
   ]
 };
